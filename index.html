@@ -1,9 +1,177 @@
-<!DOKTYPE html>
-<html>
-  <head>
-    <title>Test</title>
-  </head>
-  <body>
-    
-  </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chernobyl - Impatto nel tempo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/nuclear-power-plant.svg" alt="Nuclear symbol">
+      <h1>Chernobyl: Evoluzione e Memoria</h1>
+    </div>
+    <p class="intro">Un viaggio visivo attraverso le immagini satellitari per riflettere sui rischi dell'energia nucleare.</p>
+
+    <nav class="hamburger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="testimonianze.html">Testimonianze</a></li>
+        <li><a href="posizioni.html">Posizioni sull'energia nucleare</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="timeline-section">
+      <div class="timeline" id="timeline">
+        <div class="timeline-point" data-index="0" data-date="22/04/1986"></div>
+        <div class="timeline-point" data-index="1" data-date="26/04/1986"></div>
+        <div class="timeline-point" data-index="2" data-date="20/05/1986"></div>
+        <div class="timeline-point" data-index="3" data-date="25/01/2001"></div>
+        <div class="timeline-point" data-index="4" data-date="05/07/2013"></div>
+        <div class="timeline-point" data-index="7" data-date="08/09/2016"></div>
+        <div class="timeline-point" data-index="10" data-date="14/11/2016"></div>
+        <div class="timeline-point" data-index="13" data-date="29/11/2016"></div>
+        <div class="timeline-point" data-index="14" data-date="25/02/2017"></div>
+        <div class="timeline-point" data-index="15" data-date="31/07/2020"></div>
+        <div class="timeline-point" data-index="16" data-date="14/04/2025"></div>
+      </div>
+    </section>
+
+    <section class="slider-section">
+      <div class="image-pair-container">
+        <div class="image-pair" data-index="0">
+          <img src="images/22-04-1986.jpg" alt="Reattore 4 - Immagine satellitare" />
+          <img src="images/22-04-1986-chernobyl.jpg" alt="Reattore 4 - Vista 2" />
+        </div>
+        <div class="image-pair" data-index="1">
+          <img src="images/29-04-1986.jpg" alt="Esplosione - Vista 1" />
+          <img src="images/28-04-1986-reattore-4.jpg" alt="Esplosione - Vista 2" />
+        </div>
+        <div class="image-pair" data-index="2">
+          <img src="images/31-05-1986.jpg" alt="Image 3A" />
+          <img src="images/31-05-1986-preparazione-primo-sarcofago.jpg" alt="Image 3B" />
+        </div>
+        <div class="image-pair" data-index="3">
+          <img src="images/25-01-2001.jpg" alt="Image 4A" />
+          <img src="images/25-01-2001-spegnimento-reattore-3.jpg" alt="Image 4B" />
+        </div>
+        <div class="image-pair" data-index="4">
+          <img src="images/05-07-2013.jpg" alt="Image 5A" />
+          <img src="images/05-07-2013-sarcofago-in-costruzione.jpg" alt="Image 5B" />
+        </div>
+        <div class="image-pair" data-index="7">
+          <img src="images/08-09-2016.jpg" alt="Image 8A" />
+          <img src="images/08-09-2016-prypiat.avif" alt="Image 8B" />
+        </div>
+        <div class="image-pair" data-index="10">
+          <img src="images/04-11-2016.jpg" alt="Image 11A" />
+          <img src="images/14-11-2016-nsc.webp" alt="Image 11B" />
+        </div>
+        <div class="image-pair" data-index="13">
+          <img src="images/07-12-2016.jpg" alt="Image 14A" />
+          <img src="images/07-12-2016-nsc.jpg" alt="Image 14B" />
+        </div>
+        <div class="image-pair" data-index="14">
+          <img src="images/25-02-2017.jpg" alt="Image 15A" />
+          <img src="images/25-02-2017-lago.jpg" alt="Image 15B" />
+        </div>
+        <div class="image-pair" data-index="15">
+          <img src="images/31-07-2020.jpg" alt="Image 16A" />
+          <img src="images/31-07-2020-nsc.jpg" alt="Image 16B" />
+        </div>
+        <div class="image-pair" data-index="16">
+          <img src="images/14-04-2025.jpg" alt="Image 17A" />
+          <img src="images/14-02-2025-missile.jpg" alt="Image 17B" />
+        </div>
+      </div>
+    </section>
+
+    <section class="description-section">
+      <div class="description-box" data-index="0">
+        <h2>22 Aprile 1986</h2>
+        <p>Queste immagini mostrano la centrale nucleare di Chernobyl pochi giorni prima del disastro.</p>
+        <p>Data immagine satellitare: 22 Aprile 1986 - Satellite Landsat 4-5 TM L2.</p>
+        <p>Data immagine lato destro: 1986.</p>
+      </div>
+      <div class="description-box" data-index="1">
+        <h2>26 Aprile 1986</h2>
+        <p>Le immagini mostrano l'esplosione e i danni alla centrale. Si nota una nuvola di fumo sopra alla centrale.</p>
+        <p>Data immagine satellitare: 29 Aprile 1986 - Satellite Landsat 4-5 TM L2.</p>
+        <p>Data immagine lato destro: 28 Aprile 1986 - Fonte: <a href="https://it.wikipedia.org/wiki/Sarcofago_della_centrale_nucleare_di_%C4%8Cernobyl%27#/media/File:IAEA_02790050_(5612554065).jpg" target="_blank">Wikipedia</a> .</p>
+      </div>
+      <div class="description-box" data-index="2">
+        <h2>20 Maggio 1986</h2>
+        <p>I lavori per la prima copertura temporanea del reattore 4 sono cominciati il 20 maggio 1986.</p>
+        <p>Data immagine satellitare: 31 Maggio 1986 - Satellite Landsat 4-5 TM L2.</p>
+        <p>Data immagine lato destro: 20 Maggio 1986 - Fonte: <a href="https://it.wikipedia.org/wiki/Sarcofago_della_centrale_nucleare_di_%C4%8Cernobyl%27#/media/File:IAEA_02790050_(5612554065).jpg" target="_blank">Wikipedia</a>.</p>
+      </div>
+      <div class="description-box" data-index="3">
+        <h2>25 Gennaio 2001</h2>
+        <p>L'ultimo reattore funzionante, il numero 3, è stato spento il 15 dicembre 2000.</p>
+        <p>Data immagine satellitare: 25 Gennaio 2001 - Satellite Landsat 4-5 TM L2.</p>
+        <p>Data immagine lato destro: 15 dicembre 2000 - Fonte: <a href="https://www.forgottenchernobyl.net/last-chernobyl-reactor-shutdown-15-december-2000" target="_blank">Forgottenchernobyl.net</a>.</p>
+      </div>
+      <div class="description-box" data-index="4">
+        <h2>05 Luglio 2013</h2>
+        <p>Lavori di costruzione del NSC (New Safe Confinement), iniziati nel 2010, in corso.</p>
+        <p>Data immagine satellitare: 05 Luglio 2013 - Satellite Landsat 8-9 L1.</p>
+        <p>Data immagine lato destro: 24 Giugno 2013 - Fonte: <a href="https://en.wikipedia.org/wiki/Chernobyl_New_Safe_Confinement#/media/File:Chernobyl_NPP_Site_Panorama_with_NSC_Construction_-_June_2013.jpg" target="_blank">Wikipedia</a>.</p>
+      </div>
+      <div class="description-box" data-index="7">
+        <h2>08 Settembre 2016</h2>
+        <p>Nella vicina città di Pripyat, la natura ha ormai preso il sopravvento: piante e alberi crescono liberamente tra gli edifici abbandonati e le vecchie strade.</p>
+        <p>In lontananza è visibile il NSC in fase di costruzione.</p>
+        <p>Data immagine satellitare: 08 Settembre 2016 - Satellite Sentinel-2 L1C.</p>
+        <p>Data immagine lato destro: 20 Giugno 2016 - Fonte: <a href="https://www.shutterstock.com/it/video/clip-17458339-chernobyl-pripyat-3-aerial-view-copter" target="_blank">Shutterstock</a>.</p>
+      </div>
+      <div class="description-box" data-index="10">
+        <h2>14 Novembre 2016</h2>
+        <p>Il sarcofago NSC comincia ad essere spostato per il posizionamento definitivo sopra il reattore 4.</p>
+        <p>Data immagine satellitare: 04 Novembre 2016 - Satellite Sentinel-2 L1C.</p>
+        <p>Data immagine lato destro: 14 Novembre 2016 - Fonte: <a href="https://www.bbc.com/news/world-europe-37978482" target="_blank">BBC.com</a>.</p>
+      </div>
+      <div class="description-box" data-index="13">
+        <h2>29 Novembre 2016</h2>
+        <p>La procedura di posizionamento del NSC è completata.</p>
+        <p>Data immagine satellitare: 07 Dicembre 2016 - Satellite Sentinel-2 L2A.</p>
+        <p>Data immagine lato destro: 29 Novembre 2016 - Fonte: <a href="https://chnpp.gov.ua/en/about/204-projects/nsc-construction" target="_blank">Sito ufficiale centrale nucleare</a>.</p>
+      </div>
+      <div class="description-box" data-index="14">
+        <h2>25 Febbraio 2017</h2>
+        <p>Lo spegnimento, nel 2014, delle pompe che alimentavano il bacino artificiale di raffreddamento della centrale di Chernobyl ha avviato un progressivo prosciugamento dello stagno. Questo processo ha comportato la degradazione dell’ecosistema acquatico sviluppatosi nell’area e un aumento del rischio di diffusione di radionuclidi nei sedimenti esposti e nelle acque sotterranee.</p>
+        <p>Data immagine satellitare: 25 Febbraio 2017 - Satellite Sentinel-2 L2A.</p>
+        <p>Data immagine lato destro: 2019 - Fonte <a href="https://www.youtube.com/watch?v=9L4qoztE54A" target="_blank">Chornobyl NPP - Youtube</a>.</p>
+      </div>
+      <div class="description-box" data-index="15">
+        <h2>31 Luglio 2020</h2>
+        <p>Nel 2019 la struttura è passata formalmente sotto il controllo ucraino, mentre nel 2020 è stata avviata la fase di esercizio sperimentale, per consentire il monitoraggio delle radiazioni da remoto.</p>
+        <p>Data immagine satellitare: 31 Luglio 2020 - Satellite Sentinel-2 L2A.</p>
+        <p>Data immagine lato destro: 24 aprile 2020 - Fonte: <a href="https://www.chnpp.gov.ua/en/activity/shelter-object-transformation/project-nsc-construction" target="_blank">Sito ufficiale centrale nucleare</a>.</p>
+      </div>
+      <div class="description-box" data-index="16">
+        <h2>14 Aprile 2025</h2>
+        <p>Questa è la situazione attuale della zona intorno all'ex centrale nucleare, con il NSC colpito da un missile russo il 14 febbraio 2025.</p>
+        <p>Data immagine satellitare: 14 Aprile 2025 - Satellite Sentinel-2 L2A.</p>
+        <p>Data immagine lato destro: 14 febbraio 2025 - Fonte: <a href="https://www.geopop.it/ucraina-un-drone-russo-colpisce-il-reattore-nucleare-4-di-chernobyl-perche-non-dobbiamo-preoccuparci/" target="_blank">Geopop</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Progetto di sensibilizzazione ambientale - Leonardo Rigo e Matteo Pernigo | Fonte dati immagini satellitari: Sentinel Hub EO Browser</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
